@@ -42,8 +42,6 @@ const useStyles = makeStyles({
 export default function Nav() {
   
   const classes = useStyles();
-
- 
   
     return (
       <div> 
