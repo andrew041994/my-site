@@ -1,18 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
+import { makeStyles } from '@material-ui/core/styles';
+
 import logo from '../images/profilePic.jpg'
+// style={{"width" : "80px", "height" : "80px"}}
+const useStyles = makeStyles({
+  logoStyle: {
+    width: '100px',
+    height: '100px',
+    // backgroundColor: 'dark',
+    cursor: 'pointer',
+    position: 'relative',
+    top: '20px',
+    left: '120px'
+    
 
+  }
+})
 
-
-export default class Logo extends Component {
+export default function Logo()  {
  
+  const classes = useStyles();
 
 
-  render() {
+
 //  
     return (
       <div >
-        <Avatar alt="A" src={logo} style={{"width" : "80px", "height" : "80px"}} />
+        <Avatar alt="A" src={logo} className={classes.logoStyle} />
       
    
             
@@ -20,4 +35,4 @@ export default class Logo extends Component {
        </div>
     );
   }
-}
+
