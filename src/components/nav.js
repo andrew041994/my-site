@@ -1,16 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
+import { makeStyles } from '@material-ui/core/styles';
+
 import git from '../images/git.png'
+// {{"width" : "40px", "height" : "40px", "cursor" : "pointer"}}
+const useStyles = makeStyles({
+  gitStyle: {
+    width: '50px',
+    height: '50px',
+    backgroundColor: 'dark',
+    cursor: 'pointer',
+    position: 'relative',
+    top: '-50px',
+    left: '1000px'
+    
 
+  }
+})
 
+export default function Nav() {
+  
+  const classes = useStyles();
 
-export default class Nav extends Component {
-  render() {
+ 
+  
     return (
       <div> 
-          <div onClick={() => window.open("https://github.com/andrew041994")}>
-          <Avatar alt="A" src={git} style={{"width" : "40px", "height" : "40px", "cursor" : "pointer"}} />
+          <div  onClick={() => window.open("https://github.com/andrew041994")} >
+          <Avatar className={classes.gitStyle} alt="G" src={git} />
           </div>
         <Button onClick={() => window.open("https://github.com/andrew041994")} 
       variant="contained" color="primary"><strong>GitHub</strong></Button>
@@ -19,4 +37,4 @@ export default class Nav extends Component {
       variant="contained" color="primary"><strong>Twitter</strong></Button></div>
     );
   }
-}
+

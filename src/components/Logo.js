@@ -12,7 +12,7 @@ export default class Logo extends Component {
 //  
     return (
       <div >
-        <Avatar alt="A" src={logo} style={{"width" : "80px", "height" : "80px", "margin" : "10px", "border" : "25px"}} />
+        <Avatar alt="A" src={logo} style={{"width" : "80px", "height" : "80px"}} />
       
    
             
