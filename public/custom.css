@@ -2,9 +2,6 @@ body {
     background-image: url(wallPaper.png);
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
-.git {
-    justify-content: center;
-    align-items: center;
-}

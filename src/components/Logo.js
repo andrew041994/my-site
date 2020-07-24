@@ -6,11 +6,12 @@ import logo from '../images/profilePic.jpg'
 // style={{"width" : "80px", "height" : "80px"}}
 const useStyles = makeStyles({
   logoStyle: {
+    display: 'block',
     width: '100px',
     height: '100px',
     // backgroundColor: 'dark',
     cursor: 'pointer',
-    position: 'relative',
+    position: 'fixed',
     top: '20px',
     left: '120px'
     
@@ -26,7 +27,7 @@ export default function Logo()  {
 
 //  
     return (
-      <div >
+      <div onClick={()=> window.location.reload(true)}>
         <Avatar alt="A" src={logo} className={classes.logoStyle} />
       
    
