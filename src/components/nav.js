@@ -10,13 +10,15 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import logo from '../images/profilePic.jpg'
+// import wallPaper from '../public/wallPaper.png'
 // import IconButton from '@material-ui/core/IconButton';
 // import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '10px'
+    padding: '10px',
+    backgroundImage: "url('public/wallPaper.png')"
   },
   logoStyle: {
     marginRight: theme.spacing(2),

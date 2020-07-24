@@ -1,7 +1,17 @@
-body {
+/* body {
     background-image: url(wallPaper.png);
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
+    height: auto;
+    width: 100%;
+    
+    
+} */
 
+
+body {
+    background-image: url(wallPaper.png);    
+    background-position: center center;   
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;   
+    background-color: #464646;
+  }
