@@ -18,12 +18,12 @@ aboutStyle: {
 
 }))
 
-export default function About() {
+const About = () => {
     const classes = useStyles();
     return (
           
-          <div className={classes.aboutStyle}>
-          <h4>About Me</h4>
+    <div className={classes.aboutStyle}>
+        <h4>About Me</h4>
         <h6>I am a Full Stack Software Engineer Experienced in Ruby, Ruby on Rails, JavaScript, 
             SQL, React and Redux based programming and a background in management. Having spent 
             6 years in the United States Marine Corps, I have developed invaluable character 
@@ -34,10 +34,23 @@ export default function About() {
              to communicate effectively, prioritize completing tasks under pressure, meet deadlines,
               and deliver a quality product for the client
               
-              </h6>  
-              </div>    
+        </h6>  
+    </div>    
           
     
     );
-  }
+}
+
+export default About;
+
+
+
+// import React from 'react';
+// 
+
+
+
+// export default function About() {
+//     
+//   }
 
