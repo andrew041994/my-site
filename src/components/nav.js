@@ -14,7 +14,10 @@ import logo from '../images/profilePic.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '10px',
+    paddingTop: "20px",
+    paddingLeft: '10px',
+    paddingRight: '10px',
+    paddingBottom: "100px",
     backgroundImage: "url('public/wallPaper.png')"
   },
   logoStyle: {

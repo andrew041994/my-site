@@ -4,27 +4,27 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
 aboutStyle: {
     color: "white",
-    // width: "80%",
-    paddingTop: "50px",
+    paddingTop: "10px",
     paddingRight: "20%",
-    // paddingBottom: "50px",
     paddingLeft: "20%",
     textAlign: "center",
     display: "inline-block",
-    backgroundColor: "black"
+    backgroundColor: "black",
+    
 
-}
+},
+
+
 
 }))
 
 export default function About() {
     const classes = useStyles();
     return (
-      <div> 
           
           <div className={classes.aboutStyle}>
           <h4>About Me</h4>
-        <p >I am a Full Stack Software Engineer Experienced in Ruby, Ruby on Rails, JavaScript, 
+        <h6>I am a Full Stack Software Engineer Experienced in Ruby, Ruby on Rails, JavaScript, 
             SQL, React and Redux based programming and a background in management. Having spent 
             6 years in the United States Marine Corps, I have developed invaluable character 
             traits such as Honor, Courage, Commitment, Honesty and Integrity that I carry with me
@@ -34,10 +34,10 @@ export default function About() {
              to communicate effectively, prioritize completing tasks under pressure, meet deadlines,
               and deliver a quality product for the client
               
-              </p>  
+              </h6>  
               </div>    
           
-     </div>
+    
     );
   }
 
