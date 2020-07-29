@@ -44,8 +44,9 @@ export default function NavBar() {
         <Toolbar>
            <Avatar onClick={()=> window.location.reload(true)} alt="A" src={logo} className={classes.logoStyle} />           
            <Typography variant="h6" className={classes.title}>
-              Alehandro Persaud
+            Alehandro Persaud 
            </Typography>
+           
            <GitHubIcon className={classes.iconStyle} onClick={() => window.open("https://github.com/andrew041994")}/>
            <LinkedInIcon className={classes.iconStyle} onClick={() => window.open("https://www.linkedin.com/in/alehandro-persaud/")}/>
            <TwitterIcon className={classes.iconStyle} onClick={() => window.open("https://twitter.com/andrew041994")}/>
