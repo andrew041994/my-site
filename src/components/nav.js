@@ -8,6 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import logo from '../images/profilePic.jpg'
 
 
@@ -53,6 +54,7 @@ const NavBar = () => {
            <GitHubIcon className={classes.iconStyle} onClick={() => window.open("https://github.com/andrew041994")}/>
            <LinkedInIcon className={classes.iconStyle} onClick={() => window.open("https://www.linkedin.com/in/alehandro-persaud/")}/>
            <TwitterIcon className={classes.iconStyle} onClick={() => window.open("https://twitter.com/andrew041994")}/>
+           <YouTubeIcon className={classes.iconStyle} onClick={() => window.open("https://www.youtube.com/channel/UCnPibH758i7LokfaR7roviw?view_as=subscriber")}/>
         </Toolbar>
       </AppBar>
     </div>

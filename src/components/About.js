@@ -9,7 +9,7 @@ aboutStyle: {
     paddingLeft: "20%",
     textAlign: "center",
     display: "inline-block",
-    backgroundColor: "black",
+    backgroundColor: "#3f51b5",
     
 
 },
