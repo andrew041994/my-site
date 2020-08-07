@@ -3,9 +3,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import react from '../images/react.png';
+import rails from '../images/rails.png';
+import redux from '../images/redux.png';
+import ruby from '../images/ruby.png';
+import javascript from '../images/javascript.png';
+import SQL from '../images/SQL.png';
+import { Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
    app: {
@@ -23,15 +27,21 @@ const useStyles = makeStyles((theme) => ({
     },
 
     tech: {   
-      
-        flexGrow: 1,
-  
+        display: 'flex',
+        '& > *': {
+          margin: theme.spacing(1),
+        },
+        alignContent: "center",
         color: "#0657eb",
         paddingTop: "60px",
-        display: "inline-block",
+        paddingLeft: "20px",
+        display: "flex",
         
         backgroundColor: "#0c0d0d"
 
+    },
+    avatar: {
+        padding: "20px"
     }
    
   
@@ -53,14 +63,20 @@ const Tech = () => {
         
             <Toolbar className={classes.tech}>
                  
-            <h6>React</h6>
-            <FontAwesomeIcon icon={faReact} size="3x"   /> 
-            <span><h6>Rails</h6>
-            <h6>Redux</h6>
-            <h6>Ruby</h6>
-            <h6>JavaScript</h6>
-            <h6>SQL</h6>
-            </span>
+            {/* <h6>React</h6> */}
+
+            <Avatar alt="R" src={react} />
+            {/* <h6>Rails</h6> */}
+            <Avatar alt="R" src={rails} />
+            {/* <h6>Redux</h6> */}
+            <Avatar alt="R" src={redux} />
+            {/* <h6>Ruby</h6> */}
+            <Avatar alt="R" src={ruby} />
+            {/* <h6>JavaScript</h6> */}
+            <Avatar alt="R" src={javascript} />
+            {/* <h6>SQL</h6> */}
+            <Avatar alt="R" src={SQL} />
+            
             </Toolbar>
             
             
