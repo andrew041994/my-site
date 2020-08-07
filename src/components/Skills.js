@@ -3,17 +3,16 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import react from '../images/react.png';
-import rails from '../images/rails.png';
-import redux from '../images/redux.png';
-import ruby from '../images/ruby.png';
-import javascript from '../images/javascript.png';
-import SQL from '../images/SQL.png';
+import materialUi from '../images/materialUi.png';
+import linux from '../images/linux.png';
+import giticon from '../images/giticon.png';
+import heroku from '../images/heroku.png';
+
 import { Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
    app: {
-
+ 
       flexGrow: 1,
       width:" 100%",
       paddingTop: "60px",
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#3f51b5",
     },
 
-    tech: {   
+    skills: {   
         display: 'flex',
         '& > *': {
           margin: theme.spacing(3),
@@ -35,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         color: "#0657eb",
    
-        
+   
         backgroundColor: "#0c0d0d"
 
     },
@@ -53,8 +52,7 @@ const useStyles = makeStyles((theme) => ({
   
   }));
 
-
-const Tech = () => {
+const Skills = () => {
     const classes = useStyles();
 
     return (
@@ -63,50 +61,33 @@ const Tech = () => {
            <AppBar position="static" color="transparent"> 
 
             <Typography variant="h4" className={classes.typo}>
-              Technologies
+              Skills
             </Typography>
 
             <Toolbar className={classes.label}>
-              <h6>React</h6>
-              <h6>Rails</h6> 
-               <h6>Redux</h6> 
-               <h6>Ruby</h6> 
-                <h6>SQL</h6>
-               <h6>JavaScript</h6> 
+              <h6>Linux</h6> 
+               <h6>GitHub</h6> 
+               <h6>Heroku</h6> 
+              <h6>Material UI</h6>
+               
             </Toolbar>
 
-            <Toolbar className={classes.tech}>                 
+            <Toolbar className={classes.skills}>                 
           
-            <Avatar alt="R" src={react} />
            
-            <Avatar alt="R" src={rails} />
+            <Avatar alt="R" src={linux} />
            
-            <Avatar alt="R" src={redux} />
+            <Avatar alt="R" src={giticon} />
             
-            <Avatar alt="R" src={ruby} />
+            <Avatar alt="R" src={heroku} />
             
-           
-            <Avatar alt="R" src={SQL} />
-            <Avatar alt="R" src={javascript} />
-            
+            <Avatar alt="R" src={materialUi} />
             </Toolbar>
             
             
            </AppBar>
-            
-
-         
-           
-    
-
-           
-
-
-     
-
-            
-        </div>
+   </div>
     );
 }
 
-export default Tech;
+export default Skills;
